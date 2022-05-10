@@ -1,0 +1,12 @@
+<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" p-id="11872" version="1.1" class="icon" t="1651818846627">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="22" width="22" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path stroke="null" id="svg_1" p-id="11873" d="m17.494142,17.388285l-14.988285,0c-1.106071,0 -2.005857,-0.937786 -2.005857,-2.09l0,-10.596571c0,-1.152214 0.899786,-2.09 2.005857,-2.09l4.194928,0c0.814286,0 1.541714,0.506214 1.8525,1.290643c0.160143,0.404429 0.536071,0.666357 0.955429,0.666357l7.985428,0c1.106071,0 2.005857,0.937786 2.005857,2.09l0,8.639571c0,1.152214 -0.899786,2.09 -2.005857,2.09z"/>
+  <text font-weight="bold" stroke="null" transform="matrix(2.377577543258667,0,0,2.377577543258667,-4.221614099031456,-13.781487662466134) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="1.5" id="svg_2" y="11.019972" x="2.874433" stroke-opacity="null" stroke-width="0" fill="#ffffff">resource</text>
+ </g>
+</svg>

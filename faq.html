@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>常见问题 | 后宫文档 </title>
+    <link rel="shortcut icon" type="image/png" href="https://dbhg.top/images/logo.ico" >
+    <link href="https://fonts.googleapis.com/css?family=Heebo:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/main.js"></script>
+    <script src="js/images/jquery-1.10.2.js"></script>
+    <script src="js/images/jquery.min.js"></script>
+    <script src="js/images/zoom.js"></script>
+    <style>
+        .bigimg{width:800px; height:600px; position: fixed;left: 0;top: 0; right: 0;bottom: 0;margin:auto;display: none;z-index:9999;border: 5px solid #fff;}
+        .mask{position: fixed;left: 0;top: 0; right: 0;bottom: 0;background-color: #000;opacity:0.5;filter: Alpha(opacity=50);z-index: 98;transition:all 1s;display: none}
+        .bigbox>.imgbox{width:800px; height:600px; float:left;border-radius:2px;overflow: hidden;margin: 0 10px 10px 10px;}
+        .bigbox>.imgbox>img{width:100%;}
+        .imgbox:hover{cursor:zoom-in}
+        .mask:hover{cursor:zoom-out}
+        .mask>img{position: fixed;right:10px;top: 10px;width: 60px;}
+        .mask>img:hover{cursor:pointer}
+        .smallimg:hover{cursor:zoom-in}
+    </style>
+    <script>
+        $(function(){
+            var obj = new zoom('mask', 'bigimg','smallimg');
+            obj.init();
+        })
+    </script>
+</head>
+
+<body>
+
+	<nav class="uk-background-muted">
+	    <div class="uk-container">
+	        <div data-uk-navbar>
+	            <div class="uk-navbar-left">
+	                <a class="uk-navbar-item uk-logo uk-text-small" href="index.html">后宫文档</a>
+	            </div>
+	            <div class="uk-navbar-right">
+	
+	                <ul class="uk-navbar-nav uk-visible@m">
+	                    <li><a href="index.html">网站首页</a></li>
+	                    <li class="uk-active"><a href="">常见问题</a></li>
+                        <li><a href="tool.html">工具</a></li>
+	                    <li><a href="download.html">下载</a></li>
+	                </ul>
+	                <div class="uk-navbar-item uk-visible@m">
+                        <a href="join/" target="_blank" target="_blank" class="uk-button uk-button-primary">加入我们</a>
+	                </div>
+					<a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-navbar-toggle-icon data-uk-toggle></a>
+	            </div>
+	        </div>
+	    </div>
+	</nav>
+
+    <div class="uk-container">
+    	<div class="uk-section uk-section-xsmall border-bottom">
+    		<div data-uk-grid>
+    			<div class="uk-width-2-3@m uk-flex uk-flex-middle">
+    				<ul class="uk-breadcrumb">
+    					<li><a href="index.html">主页</a></li>
+    					<li><span>常见问题</span></li>
+    					
+    				</ul>
+    			</div>
+    			<div class="uk-width-1-3@m">
+    				<form class="uk-search uk-search-default uk-width-1-1 awesomplete">
+    					<button class="uk-search-icon-flip" data-uk-search-icon></button>
+    					<input id="search" class="uk-search-input uk-search-default uk-width-1-1 uk-form-large" type="search" placeholder="搜索" autocomplete="off" data-minchars="1" data-maxitems="30" >
+    				</form>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+
+    <section class="uk-section">
+        <div class="uk-container">
+            <div class="uk-grid-large" data-uk-grid>
+                <div class="uk-width-auto@m">
+                    <div class="boundary-align">
+                        <div class="uk-visible@m uk-text-primary icon-category"><span data-uk-icon="icon: faq; ratio: 3"></span></div>
+                        <div class="uk-hidden@m">
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-expand@m padding-right@m padding-large-right@l">
+                    <h2 class="uk-article-title uk-margin-large-bottom">常见问题</h2>
+                    <p class="uk-text-lead uk-margin-large-bottom">解答你可能会遇到的问题</p>
+                    <article class="uk-article">
+                        <h2 class="uk-h3 uk-margin-bottom">出现如图的问题怎么办？</h2>
+                        <img src="images/faq/p1.png" width="600px" height="400px" alt="" class="smallimg" />
+                        <div class="article-content">
+                        <br />
+                            <p>答：请将内存调大一些，最好不要低于2G。</p>
+                        </div>
+                    </article>
+                    <article class="uk-article">
+                        <h2 class="uk-h3 uk-margin-bottom">地图做完发哪？</h2>
+                        <div class="article-content">
+                            <p>答：蛋白的邮箱，<a href="mailto:505351348@qq.com"><code>505351348@qq.com</code></a></p>
+                        </div>
+                    </article>
+                    <article class="uk-article">
+                        <h2 class="uk-h3 uk-margin-bottom">使用游侠对战平台进行联机时，出现错误（如图）</h2>
+                        <img src="images/faq/p2.jpg" width="600px" height="400px" alt="" class="smallimg" />
+                        <div class="article-content">
+                            <br />
+                            <p>答：这是游戏没有在平台内启动，所以出现了报错。</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+<section>
+    <img src="" alt="" class="bigimg">
+    <div class="mask">
+        <img src="img/icon/close.png" alt="">
+    </div>
+</section>
+</section>
+<section class="uk-section">
+<footer>
+      <div class="uk-container">
+        <div class="uk-grid-large uk-child-width-expand@m" data-uk-grid>	
+        </div>
+        <div class="uk-grid-large uk-margin-large-top uk-flex uk-flex-middle" data-uk-grid>
+            <div class="uk-width-1-4@m"></div>
+            <div class="uk-width-expand@m">
+                <div class="uk-width-auto@m uk-margin-medium uk-text-small">
+                    <p class="uk-display-inline-block uk-margin-medium-right uk-margin-remove-bottom">By © 2022 <a href="https://dbhg.top">DBHG</a> & <a href="https://alwolf.cn">ALWOLF</a></p>
+                    <p> 作者 © 2022 <a href="https://dbhg.top">蛋白后宫</a> & <a href="https://alwolf.cn">ALWOLF</a></p>
+              </div>
+            </div>
+            <div class="uk-width-auto@m">
+                <div class="uk-width-auto@m uk-margin-medium uk-text-small">
+                    <a href="https://space.bilibili.com/390126641/" data-uk-icon="icon: bilibili; ratio:0.8" class="uk-margin-left uk-icon-link"></a>
+                    <a href="https://www.douyin.com/user/MS4wLjABAAAAthBauB1siWQBJefyVq2U8RIc1RrIXR00Hr1aC0SU6eA" data-uk-icon="icon: douyin; ratio:0.8" class="uk-margin-left uk-icon-link"></a>
+                </div>
+            </div>
+        </div>
+      </div>
+</footer>
+</section>
+
+<div id="offcanvas" data-uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+
+        <ul class="uk-nav uk-nav-primary uk-nav-offcanvas">
+            <li class="uk-nav-header uk-logo uk-margin-bottom">后宫文档</li>
+            <li class="uk-active"><a href="">网站首页</a></li>
+            <li><a href="faq.html">常见问题</a></li>
+            <li><a href="tool.html">工具</a></li>
+            <li><a href="download.html">下载</a></li>
+            <li><a href="join/">加入我们</a></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

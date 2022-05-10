@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-CN" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>启动器配置 | 后宫文档 </title>
+    <link rel="shortcut icon" type="image/png" href="https://dbhg.top/images/logo.ico" >
+    <link href="https://fonts.googleapis.com/css?family=Heebo:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/img.css" />
+    <script src="../js/main.js"></script>
+    <script src="../js/images/jquery-1.10.2.js"></script>
+    <script src="../js/images/jquery.min.js"></script>
+    <script src="../js/images/zoom.js"></script>
+    <script>
+        $(function(){
+            var obj = new zoom('mask', 'bigimg','smallimg');
+            obj.init();
+        })
+    </script>
+</head>
+
+<body>
+
+	<nav class="uk-background-muted">
+	    <div class="uk-container">
+	        <div data-uk-navbar>
+	            <div class="uk-navbar-left">
+	                <a class="uk-navbar-item uk-logo uk-text-small" href="../index.html">后宫文档</a>
+	            </div>
+	            <div class="uk-navbar-right">
+	
+	                <ul class="uk-navbar-nav uk-visible@m">
+	                    <li><a href="../index.html">网站首页</a></li>
+	                    <li><a href="../faq.html">常见问题</a></li>
+                        <li><a href="../tool.html">工具</a></li>
+	                    <li><a href="../download.html">下载</a></li>
+	                </ul>
+	                <div class="uk-navbar-item uk-visible@m">
+                        <a href="/join/" target="_blank" class="uk-button uk-button-primary">加入我们</a>
+	                </div>
+					<a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-navbar-toggle-icon data-uk-toggle></a>
+	            </div>
+	        </div>
+	    </div>
+	</nav>
+
+    <div class="uk-container">
+    	<div class="uk-section uk-section-xsmall border-bottom">
+    		<div data-uk-grid>
+    			<div class="uk-width-2-3@m uk-flex uk-flex-middle">
+    				<ul class="uk-breadcrumb">
+    					<li><a href="../index.html">主页</a></li>
+    					<li><span>启动器配置</span></li>
+    					
+    				</ul>
+    			</div>
+
+    <section class="uk-section">
+        <div class="uk-container">
+            <div class="uk-grid-large" data-uk-grid>
+
+                <div class="uk-width-auto@m">
+                    <div class="boundary-align">
+                        <div class="uk-visible@m uk-text-primary icon-category"><img src="../img/icon/minecraft.png" width="80em" height="80em" alt="" /></div>
+
+                        <div class="uk-hidden@m">
+                            <div class="uk-button uk-button-large uk-button-default uk-width-1-1">目录</div>
+                            <div data-uk-dropdown="mode: click; pos: bottom-justify; boundary: .boundary-align; boundary-align: true">
+                                <ul class="uk-nav uk-dropdown-nav">
+                                    <li class="uk-parent">
+                                        <ul class="uk-nav-sub">
+                                            <li><a href="index.html">主页</a></li>
+                                      </ul>
+                                 <li>HMCL启动器</li>
+                                 <ul class="uk-nav-sub">
+                                    <li><a href="hmcl.html">说明</a></li>
+                                    <li><a href="hmcl-addgame.html">添加游戏</a></li>
+                                    <li class="uk-active"><a href="">基本设置</a></li>
+                                    <li><a href="hmcl-startgame.html">启动游戏</a></li>
+                                </ul>
+                                <li><a href="pcl2.html">PCL2启动器</a></li>
+                                 
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="uk-width-expand@m padding-right@m padding-large-right@l">
+
+                    <h2 class="uk-article-title uk-margin-large-bottom">启动器配置</h2>
+                    <p class="uk-text-lead uk-margin-large-bottom">教你如何配置，我的世界启动器！HMCL篇！</p>
+
+                    <article class="uk-article">
+                        <h2 class="uk-h3 uk-margin-bottom" style="text-align: center;">基本设置</h2>
+                        <div class="article-content">
+                            <p>在上一篇中，我们学到了如何添加游戏到启动器列表中
+                            <br/>那么这一篇就让我来教你，如何进行游戏启动设置吧</p>
+                            <p>如图所示，在版本列表里点击游戏版本</p>
+                            <img src="../images/hmcl/GameSettings_P3.png" alt="" width="720em" height="auto" class="smallimg" />
+                            <p>或者在启动界面中，直接点击游戏版本，如图所示</p>
+                            <img src="../images/hmcl/GUI_P3.png" alt="" width="720em" height="auto" class="smallimg" />
+                            <p>便可进入游戏设置界面</p>
+                            <img src="../images/hmcl/GameSettings_P1.png" alt="" width="720em" height="auto" class="smallimg" />
+                            <p>有箭头标记的，就是我们必须知道的设置选项</p>
+                            <p>【Java路径】启动器会自动搜索电脑里已装的所有Java,造图端版本为1.7.10所以版本选择Java8，文件名字是Jre1.8，也可以是jdk1.8
+                            <br/>如果没有搜到Java也别慌，我们手动添加，点击Java路径展开选项，选择最后的自定义
+                            <br/>路径选择：你的Java安装到哪个文件夹内，就选择哪个文件夹内的[bin]目录，例如：[D:\Java8\bin]
+                            <br/>
+                            <br/>【游戏内存】启动器默认会启用自动分配，分配的大小也是通过你设置的最小值来调整的，32位的电脑仅能设置1G，64位无限制。
+                            </p>
+                            <img src="../images/hmcl/GameSettings_P2.png" alt="" width="720em" height="auto" class="smallimg" />
+                            <p>其他的设置，没那么重要，如果你想知道其他设置有什么用，可以自己尝试一下，我相信你一定可以的</p>
+                            <p>设置到这里就完了，但现在就能启动了吗？
+                            <br/>如果是聪明的玩家，就知道还缺一个游戏用户，没有设置账号怎么玩啊？
+                            <br/>那么下一篇（启动游戏）我就教你如何设置账号并启动游戏吧！
+                            </p>
+                        </div>
+                        <div>
+                            <a class="button-link uk-text-small" href="hmcl-addgame.html">上一篇</a>
+                            <a class="button-link uk-text-small" href="hmcl-startgame.html">下一篇</a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="uk-width-1-4@m uk-visible@m">
+                        <div class="uk-position-relative">
+                            <div class="divider-left">
+                                <ul class="uk-nav uk-nav-default">
+                                   <ul class="uk-nav-header">目录
+                                    <ul class="uk-nav-sub">
+                                    <li><a href="index.html">主页</a></li>
+                                    <li>HMCL启动器</li>
+                                    <ul class="uk-nav-sub">
+                                        <li><a href="hmcl.html">说明</a></li>
+                                        <li><a href="hmcl-addgame.html">添加游戏</a></li>
+                                        <li class="uk-active"><a href="">基本设置</a></li>
+                                        <li><a href="hmcl-startgame.html">启动游戏</a></li>
+                                    </ul>
+                                    <li><a href="pcl2.html">PCL2启动器</a></li>
+                                   
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <img src="" alt="" class="bigimg">
+        <div class="mask">
+            <img src="../img/icon/close.png" alt="">
+        </div>
+    </section>
+
+	<section class="uk-section">
+        <footer>
+              <div class="uk-container">
+                <div class="uk-grid-large uk-child-width-expand@m" data-uk-grid>	
+                </div>
+                <div class="uk-grid-large uk-margin-large-top uk-flex uk-flex-middle" data-uk-grid>
+                    <div class="uk-width-1-4@m"></div>
+                    <div class="uk-width-expand@m">
+                        <div class="uk-width-auto@m uk-margin-medium uk-text-small">
+                            <div class="uk-display-inline-block uk-margin-medium-right uk-margin-remove-bottom">By © 2022 <a href="https://dbhg.top">DBHG</a> & <a href="https://alwolf.cn">ALWOLF</a></div>
+                            <div> 作者 © 2022 <a href="https://dbhg.top">蛋白后宫</a> & <a href="https://alwolf.cn">ALWOLF</a></div>
+                      </div>
+                    </div>
+                    <div class="uk-width-auto@m">
+                        <div class="uk-width-auto@m uk-margin-medium uk-text-small">
+                            <a href="https://space.bilibili.com/390126641/" data-uk-icon="icon: bilibili; ratio:0.8" class="uk-margin-left uk-icon-link"></a>
+                            <a href="https://www.douyin.com/user/MS4wLjABAAAAthBauB1siWQBJefyVq2U8RIc1RrIXR00Hr1aC0SU6eA" data-uk-icon="icon: douyin; ratio:0.8" class="uk-margin-left uk-icon-link"></a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+        </footer>
+    </section>
+    
+        <div id="offcanvas" data-uk-offcanvas="flip: true; overlay: true">
+            <div class="uk-offcanvas-bar">
+        
+                <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+        
+                <ul class="uk-nav uk-nav-primary uk-nav-offcanvas">
+                    <li class="uk-nav-header uk-logo uk-margin-bottom">后宫文档</li>
+                    <li><a href="">网站首页</a></li>
+                    <li><a href="../faq.html">常见问题</a></li>
+                    <li><a href="../tool.html">工具</a></li>
+                    <li><a href="../download.html">下载</a></li>
+                    <li><a href="/join/">加入我们</a></li>
+                </ul>
+            </div>
+        </div>
+            
+    </body>
+    </html>
