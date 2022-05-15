@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-CN" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>资源包入门 | 后宫文档 </title>
+    <link rel="shortcut icon" type="image/png" href="https://dbhg.top/images/logo.ico" >
+    <link href="https://fonts.googleapis.com/css?family=Heebo:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/pack.css"/>
+    <script src="../js/main.js"></script>
+</head>
+
+<body>
+
+	<nav class="uk-background-muted">
+	    <div class="uk-container">
+	        <div data-uk-navbar>
+	            <div class="uk-navbar-left">
+	                <a class="uk-navbar-item uk-logo uk-text-small" href="../index.html">后宫文档</a>
+	            </div>
+	            <div class="uk-navbar-right">
+	
+	                <ul class="uk-navbar-nav uk-visible@m">
+	                    <li><a href="../index.html">网站首页</a></li>
+	                    <li><a href="../faq.html">常见问题</a></li>
+                        <li><a href="../tool.html">工具</a></li>
+	                    <li><a href="../download.html">下载</a></li>
+                        <li><a href="../log.html">更新日志</a></li>
+	                </ul>
+	                <div class="uk-navbar-item uk-visible@m">
+                        <a href="/join/" target="_blank" class="uk-button uk-button-primary">加入我们</a>
+	                </div>
+					<a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-navbar-toggle-icon data-uk-toggle></a>
+	            </div>
+	        </div>
+	    </div>
+	</nav>
+
+    <div class="uk-container">
+    	<div class="uk-section uk-section-xsmall border-bottom">
+    		<div data-uk-grid>
+    			<div class="uk-width-2-3@m uk-flex uk-flex-middle">
+    				<ul class="uk-breadcrumb">
+    					<li><a href="../index.html">主页</a></li>
+    					<li><span>资源包入门</span></li>
+    					
+    				</ul>
+    			</div>
+
+                <section class="uk-section">
+                    <div class="uk-container">
+                        <div class="uk-grid-large" data-uk-grid>
+            
+                            <div class="uk-width-auto@m">
+                                <div class="boundary-align">
+                                    <div class="uk-visible@m uk-text-primary icon-category"><span data-uk-icon="icon: resource_pack; ratio: 3"></span></div>
+            
+                                    <div class="uk-hidden@m">
+                                        <div class="uk-button uk-button-large uk-button-default uk-width-1-1">目录</div>
+                                        <div data-uk-dropdown="mode: click; pos: bottom-justify; boundary: .boundary-align; boundary-align: true">
+                                            <ul class="uk-nav uk-dropdown-nav">
+                                                <li class="uk-parent">
+                                                    <a href="">材质包入门</a>
+                                                    <ul class="uk-nav-sub">
+                                                        <li><a href="/Pack/">主页</a></li>
+                                                        <li><a href="template.html">模板</a></li>
+                                                        <li>教程</li>
+                                                        <li class="uk-active"><a href="tutorial-music-pack.html">音乐包</a></li>
+                                                        <li><a href="tutorial-texture-pack.html">材质包</a></li>
+                                                        <li><a href="tutorial-use-pack.html">使用方法</a></li>
+                                                  </ul>
+                                             </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="uk-width-expand@m padding-right@m padding-large-right@l">
+
+                                <h2 class="uk-article-title uk-margin-large-bottom">资源包入门</h2>
+                                <p class="uk-text-lead uk-margin-large-bottom">教你如何制作资源包，仅造图端版本(1.7.10)</p>
+            
+                                <article class="uk-article">
+                                    <h2 class="uk-h3 uk-margin-bottom" style="text-align: center;">音乐包 教程</h2>
+                                    <div class="article-content">
+                                        <p style="text-align: center;">入门级教程，内容一大部分采自WIKI，尽量让你搞懂。</p>
+                                        <p style="text-align: center;">我们先来看下，音乐包的结构</p>
+                                        <code style="margin:10px 0px 10px 150px;padding: 20px;font-family: Arial;">
+                                            <table class="collapsible collapse-button-none">
+                                                <tbody><tr>
+                                                <th>音乐包的结构</th>
+                                               </tr>
+                                                <tr>
+                                                <td><div class="toccolours treeview" style="font-family: Arial;">
+                                                <ul><li>（资源包名称）
+                                                <ul><li>pack.mcmeta</li>
+                                                <li>pack.png(可选)</li>
+                                                <li>assets
+                                                <ul><li><i>minecraft</i>
+                                                <ul><li>sounds.json</li>
+                                                <li>sounds
+                                                <ul><li>(声音).ogg</li>
+                                                </ul></li></ul></li></ul>
+                                                </li></ul></li></ul></li></ul>
+                                                </div>
+                                                </td></tr>
+                                            </tbody>
+                                        </table>
+                                    </code>
+                                    </div>
+                                   </article>
+
+                                    <article class="uk-article">
+                                    <p style="text-align: center;font-size: 20px;">好的，我们正式开始制作吧！</p>
+                                    <br/>
+                                    <p style="text-align: center;font-size: 20px;">1. 随便在一个地方，创建一个『文件夹』，『名称』自定</p>
+                                    <p style="text-align: center;">这个『文件夹』就是<span style="color:red;">结构</span>中的『（资源包名称）』，『名称』会显示在最上面</p>
+                                    <img src="../images/pack/P1.png" alt="" style="margin: 0px 0 0px 50px;" />
+                                    <p style="text-align: center;font-size: 20px;">2. 进入『文件夹』，创建一个『文本文件』</p>
+                                    <p style="text-align: center;">这个『文本文件』，后缀名更改为『mcmeta』，这就是<span style="color:red;">结构</span>中的『pack.mcmeta』</p>
+                                    <p style="text-align: center;">pack.mcmeta内容为
+                                    <div><code  style="margin: 10px 0 10px 150px;">
+                                        <div>{</div>
+                                        <div>"pack": {</div>
+                                          <div>"pack_format": 1,</div>
+                                         <div> "description": "音乐包"</div>
+                                           <div style="margin: 0px 0px 0px 20px;">}</div>
+                                        <div>}</div>
+                                      </code></div>
+                                    </p>
+                                    <p style="text-align: center;">其中『"pack_format"』如果1，无法识别，可以改成2.</p>
+                                    <p style="text-align: center;">其中『"description"』后面是，命名音乐包的『名称』的地方
+                                    <br/>会在游戏里的文件夹/压缩包名称下显示</p>
+                                    <img src="../images/pack/P2.png" alt="" style="margin: 0px 0 0px 50px;" />
+                                    <p style="text-align: center;font-size: 20px;">(可选).找一张『尺寸』是『宽度和高度』相等的PNG『图片』</p>
+                                    <p style="text-align: center;">可以用PS或其他工具进行裁剪，然后将『文件名称』改为『pack』
+                                    <br/>这是音乐包的LOGO图片，这就是<span style="color:red;">结构</span>中的『pack.png』
+                                    <br/><span style="color:red;">注：这个LOGO图片不弄也行，不会影响识别。</span></p>
+                                    <img src="../images/pack/P3.png" alt="" style="margin: 0px 0 0px 50px;" />
+                                    <p style="text-align: center;font-size: 20px;">3. 创建一个名为『assets』的文件夹</p>
+                                    <p style="text-align: center;">这是<span style="color:red;">结构</span>中的『assets』</p>
+                                    <img src="../images/pack/P4.png" alt="" style="margin: 0px 0 0px 220px;" />
+                                    <p style="text-align: center;font-size: 20px;">4. 然后，进入『assets』文件夹，再创建一个名为『minecraft』的文件夹</p>
+                                    <p style="text-align: center;">这是<span style="color:red;">结构</span>中的『minecraft』</p>
+                                    <img src="../images/pack/P5.png" alt="" style="margin: 0px 0 0px 220px;" />
+                                    <p style="text-align: center;font-size: 20px;">5. 然后，进入『minecraft』文件夹，再创建一个名为『sounds』的文件夹</p>
+                                    <p style="text-align: center;">这是<span style="color:red;">结构</span>中的『sounds』</p>
+                                    <img src="../images/pack/P6.png" alt="" style="margin: 0px 0 0px 220px;" />
+                                    <p style="text-align: center;font-size: 20px;">6. 然后，进入『sounds』文件夹</p>
+                                    <p style="text-align: center;">选择，随便找一个音频，把它转成ogg格式，放进『sounds』文件夹内
+                                    <br/>音频名称自定，这是<span style="color:red;">结构</span>中的『(声音).ogg』</p>
+                                    <p style="text-align: center;"><span style="color:red;">注：音频大小尽量不要超过8M，不然会卡住</span></p>
+                                    <img src="../images/pack/P7.png" alt="" style="margin: 0px 0 0px 220px;" />
+                                    <p style="text-align: center;font-size: 20px;">7. 然后，返回『minecraft』文件夹下，创建一个sounds.json文件</p>
+                                    <p style="text-align: center;">这是<span style="color:red;">结构</span>中的『sounds.json』</p>
+                                    <p style="text-align: center;">sounds.json内容为
+                                        <div><code  style="margin: 10px 0 10px 180px;">
+                                            <div>{</div>
+                                            <div>"wh": {</div>
+                                              <div>"category": "record",</div>
+                                             <div>"sounds": [</div>
+                                               <div style="margin: 0px 0px 0px 20px;">{</div>
+                                            <div>"name": "wh",</div>
+                                            <div>"stream": true</div>
+                                            <div style="margin: 0px 0px 0px 15px;">}</div>
+                                            <div style="margin: 0px 0px 0px 10px;">}</div>
+                                            <div>}</div>
+                                          </code></div>
+                                        </p>
+                                    <p style="text-align: center;">其中『"wh"』是音频文件名称</p>
+                                    <p style="text-align: center;">其中『"record"』是播放源，1.7.10默认record就行了</p>
+                                    <p style="text-align: center;font-size: 20px;">8. 现在，音乐包就制作完成了</p>
+                                    <p style="text-align: center;">可以进游戏内装上，使用下列指令验证音频是否能用</p>
+                                    <p style="text-align: center;">
+                                        <div style="text-align: center;">指令格式：<code>/playsound 音频名称 玩家 x y z 音量/可听到距离</code></div>
+                                        <div style="text-align: center;">例如：<code>/playsound wh @a ~ ~ ~ 10000</code></div>
+                                    </p>
+                                </article>
+
+                               <article class="uk-article">
+                                    <p style="text-align: center; font-weight: bold;">以上就是 音乐包 的教程了<br/>如果你感兴趣的话，可用自己去尝试一下了！<br/>其他具体的内容教程可进入 我的世界WIKI 学习</p>
+                                    <p style="text-align: center; font-weight: bold;">然后是想学习修改游戏内材质的同学，请前往<a href="tutorial-texture-pack.html">材质包教程</a></p>
+                            </article>
+                            </div>
+
+                            <div class="uk-width-1-4@m uk-visible@m">
+                                <div class="uk-position-relative">
+                                    <div class="divider-left">
+                                        <ul class="uk-nav uk-nav-default">
+                                            <ul class="uk-nav-sub">
+                                            <li class="uk-nav-header">目录</li>
+                                            <ul class="uk-nav-sub">
+                                            <li><a href="/Pack/">主页</a></li>
+                                            <ul class="uk-nav-sub">
+                                            <li><a href="template.html">模板</a></li>
+                                            <li>教程</li>
+                                            <ul class="uk-nav-sub">
+                                            <li class="uk-active"><a href="tutorial-music-pack.html">音乐包</a></li>
+                                            <li><a href="tutorial-texture-pack.html">材质包</a></li>
+                                            <li><a href="tutorial-use-pack.html">使用方法</a></li>
+                                           </ul>
+                                           </ul>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+            <section class="uk-section">
+                <footer>
+                      <div class="uk-container">
+                        <div class="uk-grid-large uk-child-width-expand@m" data-uk-grid>	
+                        </div>
+                        <div class="uk-grid-large uk-margin-large-top uk-flex uk-flex-middle" data-uk-grid>
+                            <div class="uk-width-1-4@m"></div>
+                            <div class="uk-width-expand@m">
+                                <div class="uk-width-auto@m uk-margin-medium uk-text-small">
+                                    <p class="uk-display-inline-block uk-margin-medium-right uk-margin-remove-bottom">By © 2022 <a href="https://dbhg.top">DBHG</a> & <a href="https://alwolf.cn">ALWOLF</a></p>
+                                    <p> 作者 © 2022 <a href="https://dbhg.top">蛋白后宫</a> & <a href="https://alwolf.cn">ALWOLF</a></p>
+                              </div>
+                            </div>
+                            <div class="uk-width-auto@m">
+                                <div class="uk-width-auto@m uk-margin-medium uk-text-small">
+                                    <a href="https://space.bilibili.com/390126641/" data-uk-icon="icon: bilibili; ratio:0.8" class="uk-margin-left uk-icon-link"></a>
+                                    <a href="https://www.douyin.com/user/MS4wLjABAAAAthBauB1siWQBJefyVq2U8RIc1RrIXR00Hr1aC0SU6eA" data-uk-icon="icon: douyin; ratio:0.8" class="uk-margin-left uk-icon-link"></a>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                </footer>
+            </section>
+            
+                <div id="offcanvas" data-uk-offcanvas="flip: true; overlay: true">
+                    <div class="uk-offcanvas-bar">
+                
+                        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+                
+                        <ul class="uk-nav uk-nav-primary uk-nav-offcanvas">
+                            <li class="uk-nav-header uk-logo uk-margin-bottom">后宫文档</li>
+                            <li><a href="">网站首页</a></li>
+                            <li><a href="../faq.html">常见问题</a></li>
+                            <li><a href="../tool.html">工具</a></li>
+                            <li><a href="../download.html">下载</a></li>
+                            <li><a href="../log.html">更新日志</a></li>
+                            <li><a href="/join/">加入我们</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </body>
+            </html>
