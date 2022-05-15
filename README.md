@@ -3,7 +3,7 @@
 
 [下载造图端](https://docs.dbhg.top/download.html)
 
-[下载造图端(备用)](https://docs.dbhg.top/download.html)
+[下载造图端(备用)](https://doc.dbhg.top/download.html)
 
 ## 正式站点
 [前往](https://docs.dbhg.top)
