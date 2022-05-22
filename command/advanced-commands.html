@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="zh-CN" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>指令入门 | 后宫文档 </title>
+    <link rel="shortcut icon" type="image/png" href="https://dbhg.top/images/logo.ico" >
+    <link href="https://fonts.googleapis.com/css?family=Heebo:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/pack.css"/>
+    <script src="../js/main.js"></script>
+    <style>
+/*兼容移动端*/
+@media (min-width: 960px) {
+  .article-content {
+    line-height: 1.6;
+    font-size: 1.0625rem;
+  }
+}
+/*兼容桌面端*/
+@media (min-width: 1080px) {
+  .article-content {
+    margin: 0 0 0 -300px;
+    line-height: 1.6;
+    font-size: 1.2em;
+  }
+}
+    </style>
+</head>
+
+<body>
+
+	<nav class="uk-background-muted">
+	    <div class="uk-container">
+	        <div data-uk-navbar>
+	            <div class="uk-navbar-left">
+	                <a class="uk-navbar-item uk-logo uk-text-small" href="../index.html">后宫文档</a>
+	            </div>
+	            <div class="uk-navbar-right">
+	
+	                <ul class="uk-navbar-nav uk-visible@m">
+	                    <li><a href="../index.html">网站首页</a></li>
+	                    <li><a href="../faq.html">常见问题</a></li>
+                        <li><a href="../tool.html">工具</a></li>
+                        <li><a href="../log.html">更新日志</a></li>
+	                    <li><a href="../download.html">下载</a></li>
+	                </ul>
+	                <div class="uk-navbar-item uk-visible@m">
+                        <a href="/join/" target="_blank" class="uk-button uk-button-primary">加入我们</a>
+	                </div>
+					<a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-navbar-toggle-icon data-uk-toggle></a>
+	            </div>
+	        </div>
+	    </div>
+	</nav>
+
+    <div class="uk-container">
+    	<div class="uk-section uk-section-xsmall border-bottom">
+    		<div data-uk-grid>
+    			<div class="uk-width-2-3@m uk-flex uk-flex-middle">
+    				<ul class="uk-breadcrumb">
+    					<li><a href="../index.html">主页</a></li>
+    					<li><span>指令入门</span></li>
+    					
+    				</ul>
+    			</div>
+
+    <section class="uk-section">
+        <div class="uk-container">
+            <div class="uk-grid-large" data-uk-grid>
+
+                <div class="uk-width-auto@m">
+                    <div class="boundary-align">
+                        <div class="uk-visible@m uk-text-primary icon-category"><span data-uk-icon="icon: code; ratio: 3"></span></div>
+
+                        <div class="uk-hidden@m">
+                            <div class="uk-button uk-button-large uk-button-default uk-width-1-1">目录</div>
+                            <div data-uk-dropdown="mode: click; pos: bottom-justify; boundary: .boundary-align; boundary-align: true">
+                                <ul class="uk-nav uk-dropdown-nav">
+                                    <li class="uk-parent">
+                                        <a href="/command/">指令入门</a>
+                                        <ul class="uk-nav-sub">
+                                            <li><a href="index.html">介绍</a></li>
+                                            <li><a href="basic-commands.html">基本指令</a></li>
+                                            <li class="uk-active"><a href="advanced-commands.html">高级指令</a></li>
+                                      </ul>
+                                 </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="uk-width-expand@m padding-right@m padding-large-right@l">
+
+                    <h2 class="uk-article-title uk-margin-large-bottom">指令入门</h2>
+                    <p class="uk-text-lead uk-margin-large-bottom">向你介绍并使用，造图端（1.7.10）能用的指令！</p>
+
+                    <article class="uk-article">
+                        <h2 class="uk-h3 uk-margin-bottom" style="text-align: center;font-weight: bold;">注意</h2>
+                        <div class="article-content">
+                            <p>当前造图端使用的版本是<strong>1.7.10</strong>，所以能用的指令不是很多，指令的语法格式也要注意哦！</p>
+                            <p>1.7.10部分指令可以使用NBT，但因为没有@s与@e，所以有很多指令做不到该有的效果，但某些指令也还是可以用@a呀、@p呀，来用出NBT的</p>
+                            <p>好的接下来，我就为你介绍在 <strong>1.7.10</strong> 版本下能使用的基础指令</p>
+                        </div>
+                    </article>
+                    <article class="uk-article" id="basic" name="basic-commands">
+                        <h2 class="uk-h3 uk-margin-bottom" style="text-align: center;font-weight: bold;">高级指令</h2>
+                        <div class="article-content">
+                            <div class="uk-margin-large-top">
+                                <table class="uk-table uk-table-divider uk-table-middle uk-table-justify uk-table-responsive">
+                                    <tbody>
+                                        <tr>
+                                            <td>命令</td>
+                                            <td>命令名</td>
+                                            <td>作用</td>
+                                            <td>语法</td>
+                                            <td>语法举例</td>
+                                            <td>备注</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>/tellraw</code></td>
+                                            <td>发送Json文本</td>
+                                            <td>向指定玩家，发送Json文本内容。</td>
+                                            <td><code>/tellraw &#60;玩家&#62; &#60;Json文本&#62;</code></td>
+                                            <td><code>/tellraw @a [{"test":"文本文字","color":"green"}] </code></td>
+                                            <td>&#60;玩家&#62;是玩家的ID，或通用的@a、@p或@r都行，该指令必须指定玩家。</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>/testfor</code></td>
+                                            <td>检测实体</td>
+                                            <td>检测实体(玩家)是否存在。</td>
+                                            <td><code>/testfor &#60;玩家(可NBT)&#62;</code></td>
+                                            <td><code>/testfor @a </code>
+                                            <br/><code>/testfor Steve[r=2]</code></td>
+                                            <td>&#60;玩家(可NBT)&#62;是玩家的ID，或通用的@a、@p或@r都行，然后加上[]后执行，该指令必须指定玩家。</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>/testforblock</code></td>
+                                            <td>检测方块</td>
+                                            <td>检测方块是否在某个位置，是什么状态。</td>
+                                            <td><code>/testforblock &#60;x&#62; &#60;y&#62; &#60;z&#62; &#60;方块ID&#62; &#60;数据值&#62; &#60;NBT&#62;</code></td>
+                                            <td><code>/testforblock ~ ~ ~ stone 1 </code>
+                                            <td>&#60;方块ID&#62;是方块的英文名称，可使用数字ID
+                                            <br/>&#60;x&#62;是游戏内的横坐标，x轴。
+                                            <br/>&#60;y&#62;是是游戏内的高度值，y轴。
+                                            <br/>&#60;z&#62;是游戏内的纵坐标，z轴。
+                                            <br/>&#60;数据值&#62;每个方块，都有数据值，分别为0~15，在不同数值下的状态不同</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>/spreadplayers</code></td>
+                                            <td>游戏模式</td>
+                                            <td>更改玩家的游戏模式</td>
+                                            <td><code>/spreadplayers &#60;x&#62; &#60;z&#62; &#60;扩散距离&#62; &#60;最远距离&#62; &#60;true|false&#62; &#60;玩家&#62;</code></td>
+                                            <td><code>/spreadplayers ~-1 ~1 1 2 true @a </code></td>
+                                            <td>&#60;x&#62;是游戏内的横坐标，x轴。
+                                            <br/>&#60;z&#62;是游戏内的纵坐标，z轴。
+                                            <br/>&#60;true|false&#62;为同队成员在传送后会不会出现在一起
+                                            <br/>&#60;玩家(可选)&#62;是玩家的ID，或通用的@a、@p或@r都行，如果不指定，默认是自己的。</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="/command/scoreboard-command.html"><code>/scoreboard</code></a></td>
+                                            <td>计分板|队伍</td>
+                                            <td>管理记分板的目标、玩家和队伍。</td>
+                                            <td><code>/scoreboard &#60;objectives|players|teams&#62;</code>
+                                            <br/>计分板:<code>/scoreboard objectives &#60;list|add|remove|setdisplay&#62;</code>
+                                            <br/>数值更改:<code>/scoreboard players &#60;list|add|remove|set&#62;</code>
+                                            <br/>队伍:<code>/scoreboard teams &#60;list|add|remove|empty|join|leave|option&#62;</code></td>
+                                            <td>计分板创建<code>/scoreboard objectives add 1 dummy 1</code>
+                                            <br/>数值更改<code>/scoreboard players add @a dummy 1</code>
+                                            <td>详细请前往<span><a href="/command/scoreboard-command.html">scoreboard介绍页</a></span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p>参考：<a href="https://minecraft.fandom.com/zh/wiki/%E5%91%BD%E4%BB%A4#.E4.BD.BF.E7.94.A8.E6.96.B9.E6.B3.95">WIki 命令</a></p>
+                        </div>
+                        <p>现在你已经了解一些高级指令了，如果你还想学习，就快去游戏内尝试一下吧！</a></p>
+                        <div>
+                            <a class="button-link uk-text-small" href="basic-commands.html">上一页</a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="uk-width-1-4@m uk-visible@m">
+                        <div class="uk-position-relative">
+                            <div class="divider-left">
+                                <ul class="uk-nav uk-nav-default">
+                                    <ul class="uk-nav-sub">
+                                    <li class="uk-nav-header">目录</li>
+                                    <li><a href="index.html">介绍</a></li>
+                                    <li><a href="basic-commands.html">基本指令</a></li>
+                                    <li class="uk-active"><a href="advanced-commands.html">高级指令</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+	<section class="uk-section">
+        <footer>
+              <div class="uk-container">
+                <div class="uk-grid-large uk-child-width-expand@m" data-uk-grid>	
+                </div>
+                <div class="uk-grid-large uk-margin-large-top uk-flex uk-flex-middle" data-uk-grid>
+                    <div class="uk-width-1-4@m"></div>
+                    <div class="uk-width-expand@m">
+                        <div class="uk-width-auto@m uk-margin-medium uk-text-small">
+                            <p class="uk-display-inline-block uk-margin-medium-right uk-margin-remove-bottom">By © 2022 <a href="https://dbhg.top">DBHG</a> & <a href="https://alwolf.cn">ALWOLF</a></p>
+                            <p> 作者 © 2022 <a href="https://dbhg.top">蛋白后宫</a> & <a href="https://alwolf.cn">ALWOLF</a></p>
+                      </div>
+                    </div>
+                    <div class="uk-width-auto@m">
+                        <div class="uk-width-auto@m uk-margin-medium uk-text-small">
+                            <a href="https://space.bilibili.com/390126641/" data-uk-icon="icon: bilibili; ratio:0.8" class="uk-margin-left uk-icon-link"></a>
+                            <a href="https://www.douyin.com/user/MS4wLjABAAAAthBauB1siWQBJefyVq2U8RIc1RrIXR00Hr1aC0SU6eA" data-uk-icon="icon: douyin; ratio:0.8" class="uk-margin-left uk-icon-link"></a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+        </footer>
+    </section>
+    
+        <div id="offcanvas" data-uk-offcanvas="flip: true; overlay: true">
+            <div class="uk-offcanvas-bar">
+        
+                <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+        
+                <ul class="uk-nav uk-nav-primary uk-nav-offcanvas">
+                    <li class="uk-nav-header uk-logo uk-margin-bottom">后宫文档</li>
+                    <li><a href="">网站首页</a></li>
+                    <li><a href="../faq.html">常见问题</a></li>
+                    <li><a href="../tool.html">工具</a></li>
+                    <li><a href="../download.html">下载</a></li>
+                    <li><a href="../log.html">更新日志</a></li>
+                    <li><a href="/join/">加入我们</a></li>
+                </ul>
+            </div>
+        </div>
+    </body>
+    </html>

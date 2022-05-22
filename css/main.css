@@ -3754,9 +3754,9 @@ select.uk-form-width-xsmall {
 }
 
 .article-content {
-  line-height: 1.6;
-  font-size: 1.0625rem;
-}
+    line-height: 1.6;
+    font-size: 1.0625rem;
+  }
 
 .article-content * + h1, .article-content * + .uk-h1, .article-content * + h2, .article-content * + .uk-h2, .article-content * + h3, .article-content * + .uk-h3, .article-content * + h4, .article-content * + .uk-h4, .article-content * + h5, .article-content * + .uk-h5, .article-content * + h6, .article-content * + .uk-h6 {
   margin-top: 54px;
