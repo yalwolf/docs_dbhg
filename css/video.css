@@ -1,0 +1,414 @@
+/*布局*/
+ul li{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.btvb1 a:link,
+.btvb1 a:visited {
+     margin: auto;
+    background-color: #01abc9;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+  
+.btvb1 a:hover,
+.btvb1 a:active {
+     margin: auto;
+    background-color: rgb(0, 238, 255);
+}
+
+.video{
+    margin: -435px 0px 0 -200px;
+    width: 100%;
+    height: 720px;
+}
+.videolist{
+    margin: -20px -700px 0 730px;
+    font-size: 1em;
+}
+
+.videolist ul {
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+}
+.videolist li a {
+    text-align: center;
+    display: block;
+    color: #000;
+    width: 200px;
+    text-decoration: none;
+}
+
+.videolist li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+.videolist li a:active {
+    background-color: #555;
+    color: white;
+}
+
+.videolist li a:visited {
+    background-color: rgba(0, 255, 234);
+    color: #000;
+}
+
+/*适配*/
+@media (min-width: 280px) {
+    .video{
+        width: 100%;
+        height: 280px;
+        margin: 20px 0px 0px 0px;
+    }
+    .videolist{
+        margin: auto;
+        font-size: 1.3em;
+    }
+    .videolist ul {
+        text-align: center;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 200px;
+        background-color: #f1f1f1;
+    }
+    .videolist li a {
+        text-align: center;
+        display: block;
+        color: #000;
+        width: 200px;
+        text-decoration: none;
+    }
+}
+@media (min-width: 360px) {
+    .video{
+        width: 100%;
+        height: 280px;
+        margin: 20px 0px 0px 0px;
+    }
+    .videolist{
+        margin: auto auto auto -18px;
+    }
+    .videolist ul {
+        text-align: center;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 300px;
+        background-color: #f1f1f1;
+    }
+    .videolist li a {
+        text-align: center;
+        display: block;
+        color: #000;
+        width: 300px;
+        text-decoration: none;
+    }
+}
+
+@media (min-width: 375px) {
+    .video{
+        width: 100%;
+        height: 200px;
+        margin: 20px 0px 0px 0px;
+    }
+    .videolist{
+        margin: auto auto auto 40px;
+        font-size: 1.2em;
+    }
+    .videolist ul {
+        text-align: center;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 200px;
+        background-color: #f1f1f1;
+    }
+    .videolist li a {
+        text-align: center;
+        display: block;
+        color: #000;
+        width: 200px;
+        text-decoration: none;
+    }
+}
+
+@media (min-width: 390px) {
+    .video{
+        width: 100%;
+        height: 280px;
+        margin: 20px 0px 0px 0px;
+    }
+    .videolist{
+        margin: auto auto auto 50px;
+        font-size: 1.2em;
+    }
+}
+
+@media (min-width: 393px) {
+    .video{
+        width: 100%;
+        height: 280px;
+        margin: 20px 0px 0px 0px;
+    }
+    .videolist{
+        margin: auto auto auto 50px;
+        font-size: 1.2em;
+    }
+}
+
+@media (min-width: 412px) {
+    .video{
+        width: 100%;
+        height: 280px;
+        margin: 20px 0px 0px 0px;
+    }
+    .videolist{
+        margin: auto auto auto 10px;
+    }
+    .videolist ul {
+        text-align: center;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 300px;
+        background-color: #f1f1f1;
+    }
+    .videolist li a {
+        text-align: center;
+        display: block;
+        color: #000;
+        width: 300px;
+        text-decoration: none;
+    }
+}
+
+@media (min-width: 414px) {
+    .video{
+        width: 100%;
+        height: 220px;
+        margin: 20px 0px 0px 0px;
+    }
+    .videolist{
+        margin: auto auto auto 10px;
+    }
+    .videolist ul {
+        text-align: center;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 300px;
+        background-color: #f1f1f1;
+    }
+    .videolist li a {
+        text-align: center;
+        display: block;
+        color: #000;
+        width: 300px;
+        text-decoration: none;
+    }
+}
+
+@media (min-width: 540px) {
+    .video{
+        width: 100%;
+        height: 280px;
+        margin: 20px 0px 0px 0px;
+    }
+    .videolist{
+        margin: auto auto auto 50px;
+    }
+    .videolist ul {
+        text-align: center;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 350px;
+        background-color: #f1f1f1;
+    }
+    .videolist li a {
+        text-align: center;
+        display: block;
+        color: #000;
+        width: 350px;
+        text-decoration: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .video{
+        width: 100%;
+        height: 280px;
+        margin: 20px 0px 0px 0px;
+    }
+    .videolist{
+        margin: auto auto auto 145px;
+        font-size: 1.32em;
+    }
+    .videolist ul {
+        text-align: center;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 350px;
+        background-color: #f1f1f1;
+    }
+    .videolist li a {
+        text-align: center;
+        display: block;
+        color: #000;
+        width: 350px;
+        text-decoration: none;
+    }
+}
+
+@media (min-width: 820px) {
+    .video{
+        width: 100%;
+        height: 280px;
+        margin: 20px 0px 0px 0px;
+    }
+    .videolist{
+        margin: auto auto auto 170px;
+        font-size: 1.50em;
+    }
+    .videolist ul {
+        text-align: center;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 350px;
+        background-color: #f1f1f1;
+    }
+    .videolist li a {
+        text-align: center;
+        display: block;
+        color: #000;
+        width: 350px;
+        text-decoration: none;
+    }
+}
+
+@media (min-width: 912px) {
+    .video{
+        width: 100%;
+        height: 280px;
+        margin: 20px 0px 0px 0px;
+    }
+    .videolist{
+        margin: auto auto auto 220px;
+        font-size: 2em;
+    }
+    .videolist ul {
+        text-align: center;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 350px;
+        background-color: #f1f1f1;
+    }
+    .videolist li a {
+        text-align: center;
+        display: block;
+        color: #000;
+        width: 350px;
+        text-decoration: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    .video{
+        margin: -625px 0px 0 0px;
+        width: 80%;
+        height: 480px;
+    }
+    .videolist{
+        margin: 10px -700px 0 710px;
+        font-size: 1.2em;
+        
+    }
+    
+    .videolist ul {
+        text-align: center;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 180px;
+        background-color: #f1f1f1;
+    }
+    .videolist li a {
+        text-align: center;
+        display: block;
+        color: #000;
+        width: 180px;
+        text-decoration: none;
+    }
+}
+
+@media (min-width: 1080px) {
+    .video{
+        margin: -435px 0px 0 -200px;
+        width: 100%;
+        height: 720px;
+    }
+    .videolist{
+        margin: -20px -700px 0 730px;
+        font-size: 1.2em;
+        
+    }
+    
+    .videolist ul {
+        text-align: center;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 200px;
+        background-color: #f1f1f1;
+    }
+    .videolist li a {
+        text-align: center;
+        display: block;
+        color: #000;
+        width: 200px;
+        text-decoration: none;
+    }
+}
+
+@media (min-width: 1280px) {
+    .video{
+        margin: -545px 0px 0 -100px;
+        width: 90%;
+        height: 600px;
+    }
+    .videolist{
+        margin: -20px -700px 0 730px;
+        font-size: 1.2em;
+        
+    }
+    
+    .videolist ul {
+        text-align: center;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 200px;
+        background-color: #f1f1f1;
+    }
+    .videolist li a {
+        text-align: center;
+        display: block;
+        color: #000;
+        width: 200px;
+        text-decoration: none;
+    }
+}

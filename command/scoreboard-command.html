@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>指令入门 | 后宫文档 </title>
+    <link rel="shortcut icon" href="../images/logo.ico" width="64px" height="64px" type="image/x-icon" />
+	<link rel="apple-touch-icon" href="../images/logo.ico" width="64px" height="64px" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Heebo:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/pack.css"/>
+    <script src="../js/main.js"></script>
+    <style>
+        /*兼容移动端*/
+        @media (min-width: 960px) {
+          .article-content {
+            line-height: 1.6;
+            font-size: 1.0625rem;
+          }
+        }
+        /*兼容桌面端*/
+        @media (min-width: 1080px) {
+          .article-content {
+            margin: 0 0 0 200px;
+            line-height: 1.6;
+            font-size: 1.2em;
+          }
+        }
+            </style>
+</head>
+
+<body>
+
+	<nav class="uk-background-muted">
+	    <div class="uk-container">
+	        <div data-uk-navbar>
+	            <div class="uk-navbar-left">
+	                <a class="uk-navbar-item uk-logo uk-text-small" href="../index.html">后宫文档</a>
+	            </div>
+	            <div class="uk-navbar-right">
+	
+	                <ul class="uk-navbar-nav uk-visible@m">
+	                    <li><a href="../index.html">网站首页</a></li>
+	                    <li><a href="../faq.html">常见问题</a></li>
+                        <li><a href="../tool.html">工具</a></li>
+                        <li><a href="/download/">下载</a></li>
+                        <li><a href="/video/">视频站</a></li>
+                        <li><a href="../log.html">更新日志</a></li>
+	                </ul>
+	                <div class="uk-navbar-item uk-visible@m">
+                        <a href="/join/" target="_blank" class="uk-button uk-button-primary">加入我们</a>
+	                </div>
+					<a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-navbar-toggle-icon data-uk-toggle></a>
+	            </div>
+	        </div>
+	    </div>
+	</nav>
+
+    <div class="uk-container">
+    	<div class="uk-section uk-section-xsmall border-bottom">
+    		<div data-uk-grid>
+    			<div class="uk-width-2-3@m uk-flex uk-flex-middle">
+    				<ul class="uk-breadcrumb">
+    					<li><a href="../index.html">主页</a></li>
+    					<li><span>指令入门</span></li>
+    					
+    				</ul>
+    			</div>
+
+    <section class="uk-section">
+        <div class="uk-container">
+            <div class="uk-grid-large" data-uk-grid>
+
+                <div class="uk-width-auto@m">
+                    <div class="boundary-align">
+                        <div class="uk-visible@m uk-text-primary icon-category"><span data-uk-icon="icon: code; ratio: 3"></span></div>
+
+                        <div class="uk-hidden@m">
+                            <div class="uk-button uk-button-large uk-button-default uk-width-1-1">目录</div>
+                            <div data-uk-dropdown="mode: click; pos: bottom-justify; boundary: .boundary-align; boundary-align: true">
+                                <ul class="uk-nav uk-dropdown-nav">
+                                    <li class="uk-parent">
+                                        <a href="/command/">指令入门</a>
+                                        <ul class="uk-nav-sub">
+                                            <li><a href="index.html">介绍</a></li>
+                                            <li><a href="basic-commands.html">基本指令</a></li>
+                                            <li><a href="advanced-commands.html">高级指令</a></li>
+                                      </ul>
+                                 </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="uk-width-expand@m padding-right@m padding-large-right@l">
+
+                    <h2 class="uk-article-title uk-margin-large-bottom">指令入门</h2>
+                    <p class="uk-text-lead uk-margin-large-bottom">向你介绍并使用，造图端（1.7.10）能用的指令！</p>
+
+                    <article class="uk-article" id="Java-version" name="Java-vsersion">
+                        <div class="article-content">
+                        <h2 class="uk-h3 uk-margin-bottom" style="text-align: center;font-weight: bold;">scoreboard指令集</h2>
+                        <p class="uk-text-lead" style="text-align: center;">如果你知道scoreboard指令的话，自便。
+                        <p style="text-align: center;font-size: 1.3em;">命令的介绍</p>
+                        <p style="text-align: center;">scoreboard指令集，在高级指令页面，已经给出了一些语法
+                        <br/>分别是，计分板与队伍的创建以及修改，那么我在详细的将语法列一遍</p>
+                        <br/>
+                        <p style="text-align: center;font-size: 1.3em;">命令的语法</p>
+                        <p style="text-align: center;">计分板:<code>/scoreboard objectives &#60;list|add|remove|setdisplay&#62;</code>
+                        <br/>
+                        <br/>计分板列表:<br/><code>/scoreboard objectives list</code>
+                        <br/>
+                        <br/>计分板创建:<code>/scoreboard objectives add &#60;计分板名字&#62; &#60;计分板规格&#62; &#60;计分板显示的名字&#62;</code>
+                        <br/>
+                        <br/>计分板移除:<br/><code>/scoreboard remove &#60;计分板名字&#62; </code>
+                        <br/>
+                        <br/>计分板显示位置:<code>/scoreboard setdisplay &#60;位置&#62; &#60;计分板名字&#62; </code>
+                        <br/>
+                        <br/>----------------------------------------------------------------------------------
+                        <br/>
+                        <br/>计分板玩家数值:<br/><code>/scoreboard players &#60;list|add|remove|set&#62;</code>
+                        <br/>
+                        <br/>玩家列表:<br/><code>/scoreboard players list</code>
+                        <br/>
+                        <br/>增加玩家数值:<br/><code>/scoreboard players add &#60;玩家&#62; &#60;计分板名字&#62; &#60;数值&#62;</code>
+                        <br/>
+                        <br/>移除玩家数值:<br/><code>/scoreboard players remove &#60;玩家&#62; &#60;计分板名字&#62; &#60;数值&#62;</code>
+                        <br/>
+                        <br/>重置玩家数值:<br/><code>/scoreboard players reset &#60;玩家&#62;</code>
+                        <br/>
+                        <br/>设置玩家数值:<br/><code>/scoreboard players set &#60;玩家&#62; &#60;计分板名字&#62; &#60;数值&#62;</code>
+                        <br/>
+                        <br/>----------------------------------------------------------------------------------
+                        <br/>
+                        <br/>队伍:<br/><code>/scoreboard teams &#60;list|add|remove|empty|join|leave|option&#62;</code>
+                        <br/>
+                        <br/>队伍列表:<br/><code>/scoreboard teams list</code>
+                        <br/>
+                        <br/>添加队伍:<br/><code>/scoreboard teams add &#60;队伍名&#62; &#60;显示的队伍名&#62;</code>
+                        <br/>
+                        <br/>删除队伍:<br/><code>/scoreboard teams remove &#60;队伍名&#62; </code>
+                        <br/>
+                        <br/>清空队伍:<br/><code>/scoreboard teams empty &#60;队伍名&#62;</code>
+                        <br/>
+                        <br/>加入队伍:<br/><code>/scoreboard teams join &#60;队伍名&#62; &#60;玩家&#62; </code>
+                        <br/>
+                        <br/>退出队伍:<br/><code>/scoreboard teams leave &#60;玩家&#62; </code>
+                        <br/>
+                        <br/>队伍设置:<br/><code>/scoreboard teams option &#60;队伍名&#62; &#60;friendlyfire|color|seeFriendlyInvisibles&#62; &#60;数值&#62;</code></p>
+                        <p style="text-align: center;font-size: 1.3em;">名词解释</p>
+                        <p style="text-align: center;"><code>add</code> 是 增加
+                        <br/><code>set</code> 是 设置/设定
+                        <br/><code>list</code> 是 列表
+                        <br/><code>remove</code> 是 删除/移除
+                        <br/><code>reset</code> 是 重置
+                        <br/>
+                        <br/><code>empty</code> 是 清空队伍内的全部群员
+                        <br/><code>join</code> 是 加入
+                        <br/><code>leave</code> 是 退出
+                        <br/><code>option</code> 是 队伍设置
+                        <br/><code>friendlyfire</code> 是 队友之间可否互相伤害
+                        <br/><code>color</code> 是 队伍颜色
+                        <br/><code>seeFriendlyInvisibles</code> 是 隐身队友是否可见
+                        </p>
+                        <p>参考：<a href="https://minecraft.fandom.com/zh/wiki/%E5%91%BD%E4%BB%A4#.E7.9B.B8.E5.AF.B9.E5.9D.90.E6.A0.87.E5.92.8C.E5.B1.80.E9.83.A8.E5.9D.90.E6.A0.87">Wiki百科 命令</a></p>
+                    </div>
+                    </article>
+                </div>
+
+                <div class="uk-width-1-4@m uk-visible@m">
+                        <div class="uk-position-relative">
+                            <div class="divider-left">
+                                <ul class="uk-nav uk-nav-default">
+                                    <ul class="uk-nav-sub">
+                                    <li class="uk-nav-header">目录</li>
+                                    <li><a href="index.html">介绍</a></li>
+                                    <li><a href="basic-commands.html">基本指令</a></li>
+                                    <li><a href="advanced-commands.html">高级指令</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+	<section class="uk-section">
+        <footer>
+              <div class="uk-container">
+                <div class="uk-grid-large uk-child-width-expand@m" data-uk-grid>	
+                </div>
+                <div class="uk-grid-large uk-margin-large-top uk-flex uk-flex-middle" data-uk-grid>
+                    <div class="uk-width-1-4@m"></div>
+                    <div class="uk-width-expand@m">
+                        <div class="uk-width-auto@m uk-margin-medium uk-text-small">
+                            <p class="uk-display-inline-block uk-margin-medium-right uk-margin-remove-bottom">By © 2022 <a href="https://dbhg.top">DBHG</a> & <a href="https://alwolf.cn">ALWOLF</a></p>
+                            <p> 作者 © 2022 <a href="https://dbhg.top">蛋白后宫</a> & <a href="https://alwolf.cn">ALWOLF</a></p>
+                      </div>
+                    </div>
+                    <div class="uk-width-auto@m">
+                        <div class="uk-width-auto@m uk-margin-medium uk-text-small">
+                            <a href="https://space.bilibili.com/390126641/" data-uk-icon="icon: bilibili; ratio:0.8" class="uk-margin-left uk-icon-link"></a>
+                            <a href="https://www.douyin.com/user/MS4wLjABAAAAthBauB1siWQBJefyVq2U8RIc1RrIXR00Hr1aC0SU6eA" data-uk-icon="icon: douyin; ratio:0.8" class="uk-margin-left uk-icon-link"></a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+        </footer>
+    </section>
+    
+        <div id="offcanvas" data-uk-offcanvas="flip: true; overlay: true">
+            <div class="uk-offcanvas-bar">
+        
+                <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+        
+                <ul class="uk-nav uk-nav-primary uk-nav-offcanvas">
+                    <li class="uk-nav-header uk-logo uk-margin-bottom">后宫文档</li>
+                    <li><a href="">网站首页</a></li>
+                    <li><a href="../faq.html">常见问题</a></li>
+                    <li><a href="../tool.html">工具</a></li>
+                    <li><a href="/download/">下载</a></li>
+                    <li><a href="/video/">视频站</a></li>
+                    <li><a href="../log.html">更新日志</a></li>
+                    <li><a href="/join/">加入我们</a></li>
+                </ul>
+            </div>
+        </div>
+    </body>
+    </html>

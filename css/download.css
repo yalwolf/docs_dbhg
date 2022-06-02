@@ -1,0 +1,143 @@
+.source select {
+    width: 500px;
+    height: 30px;
+    border-color: #4CAF50;
+    border-right-style: solid;
+    border-left-style: solid;
+}
+
+.source option {
+    text-align: center;
+}
+
+.source .button {
+    padding: 20px 50px;
+    color: white;
+    text-align: center;
+    font-size: 13px;
+    border-width: 1;
+    background-color: #4CAF50;
+    border-color: red;
+    border-radius: 12px;
+}
+
+.source .button:hover {
+    background-color: #3e8e41;
+    border-width: 1;
+    border-color: red;
+    cursor: pointer;
+}
+
+/*尺寸兼容*/
+@media (min-width: 280px) {
+    .source select {
+        width: 200px;
+        height: 30px;
+        border-color: #4CAF50;
+        border-right-style: solid;
+        border-left-style: solid;
+    }
+}
+
+@media (min-width: 375px) {
+    .source select {
+        width: 200px;
+        height: 30px;
+        border-color: #4CAF50;
+        border-right-style: solid;
+        border-left-style: solid;
+    }
+}
+
+@media (min-width: 390px) {
+    .source select {
+        width: 200px;
+        height: 30px;
+        border-color: #4CAF50;
+        border-right-style: solid;
+        border-left-style: solid;
+    }
+}
+
+@media (min-width: 412px) {
+    .source select {
+        width: 200px;
+        height: 30px;
+        border-color: #4CAF50;
+        border-right-style: solid;
+        border-left-style: solid;
+    }
+}
+
+@media (min-width: 540px) {
+    .source select {
+        width: 300px;
+        height: 30px;
+        border-color: #4CAF50;
+        border-right-style: solid;
+        border-left-style: solid;
+    }
+}
+
+@media (min-width: 700px) {
+    .source select {
+        width: 300px;
+        height: 30px;
+        border-color: #4CAF50;
+        border-right-style: solid;
+        border-left-style: solid;
+    }
+}
+
+@media (min-width: 820px) {
+    .source select {
+        width: 300px;
+        height: 50px;
+		font-size: 20px;
+        border-color: #4CAF50;
+        border-right-style: solid;
+        border-left-style: solid;
+    }
+}
+
+@media (min-width: 912px) {
+    .source select {
+        width: 300px;
+        height: 50px;
+		font-size: 20px;
+        border-color: #4CAF50;
+        border-right-style: solid;
+        border-left-style: solid;
+    }
+}
+
+@media (min-width: 1024px) {
+    .source select {
+        width: 500px;
+        height: 30px;
+		font-size: 12px;
+        border-color: #4CAF50;
+        border-right-style: solid;
+        border-left-style: solid;
+    }
+}
+
+@media (min-width: 1280px) {
+    .source select {
+        width: 500px;
+        height: 30px;
+        border-color: #4CAF50;
+        border-right-style: solid;
+        border-left-style: solid;
+    }
+}
+
+@media (min-width: 1080px) {
+    .source select {
+        width: 500px;
+        height: 30px;
+        border-color: #4CAF50;
+        border-right-style: solid;
+        border-left-style: solid;
+    }
+}

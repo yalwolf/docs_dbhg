@@ -4,55 +4,175 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>指令入门| 后宫文档</title>
-    <link rel="shortcut icon" type="image/png" href="https://dbhg.top/images/logo.ico" >
+    <title>指令入门 | 后宫文档 </title>
+    <link rel="shortcut icon" href="../images/logo.ico" width="64px" height="64px" type="image/x-icon" />
+	<link rel="apple-touch-icon" href="../images/logo.ico" width="64px" height="64px" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Heebo:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/pack.css"/>
     <script src="../js/main.js"></script>
+    <link rel="prefetch" href="basic-commands.html"/>
+    <link rel="prefetch" href="advanced-commands.html"/>
+    <link rel="prefetch" href="scoreboard-command.html"/>
 </head>
 
 <body>
 
-    <nav class="border-bottom">
-        <div class="uk-container">
-            <div data-uk-navbar>
-                <div class="uk-navbar-left">
-                    <a class="uk-navbar-item uk-logo uk-text-small" href="../index.html">后宫文档</a>
-                </div>
-                <div class="uk-navbar-right">
-    
-                    <ul class="uk-navbar-nav uk-visible@m">
-                        <li><a href="../index.html">网站首页</a></li>
-                        <li><a href="../faq.html">常见问题</a></li>
+	<nav class="uk-background-muted">
+	    <div class="uk-container">
+	        <div data-uk-navbar>
+	            <div class="uk-navbar-left">
+	                <a class="uk-navbar-item uk-logo uk-text-small" href="../index.html">后宫文档</a>
+	            </div>
+	            <div class="uk-navbar-right">
+	
+	                <ul class="uk-navbar-nav uk-visible@m">
+	                    <li><a href="../index.html">网站首页</a></li>
+	                    <li><a href="../faq.html">常见问题</a></li>
                         <li><a href="../tool.html">工具</a></li>
-                        <li><a href="../download.html">下载</a></li>
-                    </ul>
-                    <div class="uk-navbar-item uk-visible@m">
+                        <li><a href="/download/">下载</a></li>
+                        <li><a href="/video/">视频站</a></li>
+                        <li><a href="../log.html">更新日志</a></li>
+	                </ul>
+	                <div class="uk-navbar-item uk-visible@m">
                         <a href="/join/" target="_blank" class="uk-button uk-button-primary">加入我们</a>
-                    </div>
-                    <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-navbar-toggle-icon data-uk-toggle></a>
-                </div>
-            </div>
-        </div>
-    </nav>
+	                </div>
+					<a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-navbar-toggle-icon data-uk-toggle></a>
+	            </div>
+	        </div>
+	    </div>
+	</nav>
+
+    <div class="uk-container">
+    	<div class="uk-section uk-section-xsmall border-bottom">
+    		<div data-uk-grid>
+    			<div class="uk-width-2-3@m uk-flex uk-flex-middle">
+    				<ul class="uk-breadcrumb">
+    					<li><a href="../index.html">主页</a></li>
+    					<li><span>指令入门</span></li>
+    					
+    				</ul>
+    			</div>
 
     <section class="uk-section">
+        <div class="uk-container">
+            <div class="uk-grid-large" data-uk-grid>
 
-        <div class="uk-text-center uk-container uk-container-xsmall">
-            <h1 class="uk-article-title">404</h1>
-        </div>
-        <div class="uk-container uk-container-small">
-            <hr class="uk-margin-large-top uk-margin-large-bottom">
-            <div class="uk-margin-large-top">
-                <table>
-                    <tbody>
-                        <h1 style="text-align: center;">该页面还在制作中...</h1>
-                        <h2 style="text-align: center;">Q A Q</h2>
-                        <h1 style="text-align: center;">请在等待一下吧</h1>
-                    </tbody>
-                </table>
+                <div class="uk-width-auto@m">
+                    <div class="boundary-align">
+                        <div class="uk-visible@m uk-text-primary icon-category"><span data-uk-icon="icon: code; ratio: 3"></span></div>
+
+                        <div class="uk-hidden@m">
+                            <div class="uk-button uk-button-large uk-button-default uk-width-1-1">目录</div>
+                            <div data-uk-dropdown="mode: click; pos: bottom-justify; boundary: .boundary-align; boundary-align: true">
+                                <ul class="uk-nav uk-dropdown-nav">
+                                    <li class="uk-parent">
+                                        <a href="/command/">指令入门</a>
+                                        <ul class="uk-nav-sub">
+                                            <li class="uk-active"><a href="index.html">介绍</a></li>
+                                            <li><a href="basic-commands.html">基本指令</a></li>
+                                            <li><a href="advanced-commands.html">高级指令</a></li>
+                                      </ul>
+                                 </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="uk-width-expand@m padding-right@m padding-large-right@l">
+
+                    <h2 class="uk-article-title uk-margin-large-bottom">指令入门</h2>
+                    <p class="uk-text-lead uk-margin-large-bottom">向你介绍并使用，造图端（1.7.10）能用的指令！</p>
+
+                    <article class="uk-article" id="Java-version" name="Java-vsersion">
+                        <h2 class="uk-h3 uk-margin-bottom" style="text-align: center;font-weight: bold;">介绍</h2>
+                        <div class="article-content">
+                            <p>当前造图端使用的版本是<strong>1.7.10</strong>，所以能用的指令不是很多，指令的语法格式也要注意哦！</p>
+                            <p>1.7.10部分指令可以使用NBT，但因为没有@s与@e，所以有很多指令做不到该有的效果，但某些指令也还是可以用@a呀、@p呀，来用出NBT的</p>
+                            <p>好的接下来，我就为你介绍在 <strong>1.7.10</strong> 版本下能使用的基础指令与高级指令，以及能用NBT的指令！</p>
+                        </div>
+                        <br/>
+                        <div class="article-content">
+                        <h2 class="uk-h3 uk-margin-bottom" style="text-align: center;font-weight: bold;">命令是什么？</h2>
+                        <p class="uk-text-lead" style="text-align: center;">如果你知道NBT的话，请移步下一页，如果你不知道，请好好看一下。
+                        <div class="uk-margin-large-bottom" style="text-align: center;">我知道你可能看不懂，但一定要弄懂，这是最基本的知识</div></p>
+                        <p style="text-align: center;font-size: 1.3em;">命令的介绍</p>
+                        <p style="text-align: center;"><span style="background: red;color: white;"> 想要使用命令，就必须要在创建世界的时候，开启作弊！</span></p>
+                        <p style="text-align: center;">在游戏内 <strong>生存模式</strong> 下，使用命令，可以让自己的体验直接提升一大半，所以这为什么称为 作弊</p>
+                        <p style="text-align: center;">在游戏内 <strong>创造模式</strong> 下，使用命令，可以制作出一些非常有意思的东西，<br/>比如：在某个点生成钻石块</p>
+                        <br/>
+                        <p style="text-align: center;font-size: 1.3em;">命令的使用</p>
+                        <p style="text-align: center;">在游戏内，按下键盘上的<kbd class="keyboard-key nowrap" style="color: black;font-weight: bold;">T</kbd>键或<kbd class="keyboard-key nowrap" style="color: black;font-weight: bold;">/</kbd>唤出聊天窗口。</p>
+                        <p style="text-align: center;">注：按<kbd class="keyboard-key nowrap" style="color: black;font-weight: bold;">/</kbd>键唤出的聊天窗口会自动带个 / 号。</p>
+                        <p style="text-align: center;"><kbd class="keyboard-key nowrap">↑</kbd>和<kbd class="keyboard-key nowrap">↓</kbd>键可浏览之前输入的文本，包含所有之前执行的命令。</p>
+                        <p style="text-align: center;">在输入命令时按下<kbd class="keyboard-key nowrap">Tab ↹</kbd>键会循环显示当前可用的命令或参数</p>
+                        <p>参考：<a href="https://minecraft.fandom.com/zh/wiki/%E5%91%BD%E4%BB%A4#.E7.9B.B8.E5.AF.B9.E5.9D.90.E6.A0.87.E5.92.8C.E5.B1.80.E9.83.A8.E5.9D.90.E6.A0.87">Wiki百科 命令</a></p>
+                    </div>
+                    <br/>
+                    <div class="article-content">
+                        <h2 class="uk-h3 uk-margin-bottom" style="text-align: center;font-weight: bold;">NBT是什么？</h2>
+                        <p class="uk-text-lead" style="text-align: center;">如果你也知道NBT的话，请移步下一页，如果你不知道，请好好看一下。
+                        <div class="uk-margin-large-bottom" style="text-align: center;">我知道你可能看不懂，所以基本看下就行，知道这是怎么用的</div></p>
+                        <br/>
+                        <div class="article-content">
+                            <p style="text-align: center;">了解NBT之前，先给你介绍一下 <strong>JSON</strong> 文本格式，这是唯一使用NBT的方式</p>
+                            <p style="text-align: center;font-size: 1.3em;">Json格式</p>
+                            <p style="text-align: center;"><strong>JSON</strong> 文本格式，之前 资源包入门 教学页就已经使用过了</p>
+                            <p style="text-align: center;">我们再来复习一下吧！</p>
+                            <p style="text-align: center;">pack.mcmeta内容为
+                                <div><code  style="margin: 10px 0 10px 235px;">
+                                    <div>{</div>
+                                    <div>"pack": {</div>
+                                      <div>"pack_format": 1,</div>
+                                     <div> "description": "音乐包"</div>
+                                       <div style="margin: 0px 0px 0px 20px;">}</div>
+                                    <div>}</div>
+                                  </code></div>
+                                </p>
+                            <p style="text-align: center;">其中 <strong>"pack"</strong> 作为存储单位，包含下面 <strong>"pack_format"</strong> 与 <strong>"description"</strong> 的数据变量</p>
+                            <p>你也可以理解为层级关系： <strong>"pack"</strong> 作为一级单位，包含下面 <strong>"pack_format"</strong> 与 <strong>"description"</strong> 的二级单位</p>
+                            <p><strong>"pack_format"</strong> 与 <strong>"description"</strong>旁边的 1 和 "音乐包" 都是数据，将其更改，系统做出相应的校验，变可读取出为： 可以使用在1.7.10版本下的资源包文件，资源包名字为：音乐包</p>
+
+                            <p style="text-align: center;font-size: 1.3em;">原始Json文本</p>
+                            <p>原始JSON文本由聊天组件组成。根组件可包含有子组件，而子组件也可以有自己的子组件。组件可以包含格式和交互事件，这些也会应用到他们的子组件上。</p>
+                            <p>如：<code>/tellraw @a [{"text":"文本文字","color":"green"}]</code></p>
+                            <p>指令结果为：<span style="color:rgb(85,255,85)">文本文字</span></p>
+
+                            <p style="text-align: center;">NBT</p>
+                            <p>NBT，正如其名，它是通过一个个标签来储存和读取数据的。一个标签由标签名称和数值两部分组成，两者用冒号:隔开。例如<strong>foo:1</strong>就是一个标签。</p>
+                            <p>如：<code>/give @p minecraft:player_head{SkullOwner:"Steve"}</code></p>
+                            <p>指令结果为：<strong>给予附件的人一个Steve的头颅</strong></p>
+
+                            <p>指令中：<strong>SkullOwner为标签名称，Steve为玩家名称（纯文本字符串）</strong>
+                            <br/>标签描述：<strong>用来获得指定名称玩家皮肤的头颅。皮肤的来源取决于当前玩家使用的验证服务器和是否联网，这意味着离线登录或未联网游戏将不能加载皮肤。</strong></p>
+                            <p>参考：
+                            <a href="https://minecraft.fandom.com/zh/wiki/%E5%8E%9F%E5%A7%8BJSON%E6%96%87%E6%9C%AC%E6%A0%BC%E5%BC%8F">WIKI百科 JSON</a>
+                            <a href="https://minecraft.fandom.com/zh/wiki/%E6%95%99%E7%A8%8B/NBT%E5%91%BD%E4%BB%A4%E6%A0%87%E7%AD%BE#.E5.9F.BA.E7.A1.80">WIKI百科 NBT</a></p>
+                        </div>
+                        <p>现在你已经了解NBT的用法了，快去了解<a href="basic-commands.html">基本指令吧</a></p>
+                        <div>
+                            <a class="button-link uk-text-small" href="basic-commands.html">下一页</a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="uk-width-1-4@m uk-visible@m">
+                        <div class="uk-position-relative">
+                            <div class="divider-left">
+                                <ul class="uk-nav uk-nav-default">
+                                    <ul class="uk-nav-sub">
+                                    <li class="uk-nav-header">目录</li>
+                                    <li class="uk-active"><a href="index.html">介绍</a></li>
+                                    <li><a href="basic-commands.html">基本指令</a></li>
+                                    <li><a href="advanced-commands.html">高级指令</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-
+        </div>
     </section>
 
 	<section class="uk-section">
@@ -86,14 +206,15 @@
         
                 <ul class="uk-nav uk-nav-primary uk-nav-offcanvas">
                     <li class="uk-nav-header uk-logo uk-margin-bottom">后宫文档</li>
-                    <li><a href="../index.html">网站首页</a></li>
+                    <li><a href="">网站首页</a></li>
                     <li><a href="../faq.html">常见问题</a></li>
                     <li><a href="../tool.html">工具</a></li>
-                    <li><a href="../download.html">下载</a></li>
+                    <li><a href="/download/">下载</a></li>
+                    <li><a href="/video/">视频站</a></li>
+                    <li><a href="../log.html">更新日志</a></li>
                     <li><a href="/join/">加入我们</a></li>
                 </ul>
             </div>
         </div>
     </body>
     </html>
-

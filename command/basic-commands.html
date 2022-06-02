@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="zh-CN" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>指令入门 | 后宫文档 </title>
+    <link rel="shortcut icon" href="../images/logo.ico" width="64px" height="64px" type="image/x-icon" />
+	<link rel="apple-touch-icon" href="../images/logo.ico" width="64px" height="64px" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Heebo:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/pack.css"/>
+    <script src="../js/main.js"></script>
+    <style>
+/*兼容移动端*/
+@media (min-width: 960px) {
+  .article-content {
+    line-height: 1.6;
+    font-size: 1.0625rem;
+  }
+}
+/*兼容桌面端*/
+@media (min-width: 1080px) {
+  .article-content {
+    margin: 0 0 0 -300px;
+    line-height: 1.6;
+    font-size: 1.2em;
+  }
+  .uk-table-justify.uk-table-responsive td {
+    padding-left: 5;
+    padding-right: 0;
+  }
+}
+    </style>
+</head>
+
+<body>
+
+	<nav class="uk-background-muted">
+	    <div class="uk-container">
+	        <div data-uk-navbar>
+	            <div class="uk-navbar-left">
+	                <a class="uk-navbar-item uk-logo uk-text-small" href="../index.html">后宫文档</a>
+	            </div>
+	            <div class="uk-navbar-right">
+	
+	                <ul class="uk-navbar-nav uk-visible@m">
+	                    <li><a href="../index.html">网站首页</a></li>
+	                    <li><a href="../faq.html">常见问题</a></li>
+                        <li><a href="../tool.html">工具</a></li>
+                        <li><a href="/download/">下载</a></li>
+                        <li><a href="/video/">视频站</a></li>
+                        <li><a href="../log.html">更新日志</a></li>
+	                </ul>
+	                <div class="uk-navbar-item uk-visible@m">
+                        <a href="/join/" target="_blank" class="uk-button uk-button-primary">加入我们</a>
+	                </div>
+					<a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-navbar-toggle-icon data-uk-toggle></a>
+	            </div>
+	        </div>
+	    </div>
+	</nav>
+
+    <div class="uk-container">
+    	<div class="uk-section uk-section-xsmall border-bottom">
+    		<div data-uk-grid>
+    			<div class="uk-width-2-3@m uk-flex uk-flex-middle">
+    				<ul class="uk-breadcrumb">
+    					<li><a href="../index.html">主页</a></li>
+    					<li><span>指令入门</span></li>
+    					
+    				</ul>
+    			</div>
+
+    <section class="uk-section">
+        <div class="uk-container">
+            <div class="uk-grid-large" data-uk-grid>
+
+                <div class="uk-width-auto@m">
+                    <div class="boundary-align">
+                        <div class="uk-visible@m uk-text-primary icon-category"><span data-uk-icon="icon: code; ratio: 3"></span></div>
+
+                        <div class="uk-hidden@m">
+                            <div class="uk-button uk-button-large uk-button-default uk-width-1-1">目录</div>
+                            <div data-uk-dropdown="mode: click; pos: bottom-justify; boundary: .boundary-align; boundary-align: true">
+                                <ul class="uk-nav uk-dropdown-nav">
+                                    <li class="uk-parent">
+                                        <a href="/command/">指令入门</a>
+                                        <ul class="uk-nav-sub">
+                                            <li><a href="index.html">介绍</a></li>
+                                            <li class="uk-active"><a href="basic-commands.html">基本指令</a></li>
+                                            <li><a href="advanced-commands.html">高级指令</a></li>
+                                      </ul>
+                                 </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="uk-width-expand@m padding-right@m padding-large-right@l">
+
+                    <h2 class="uk-article-title uk-margin-large-bottom">指令入门</h2>
+                    <p class="uk-text-lead uk-margin-large-bottom">向你介绍并使用，造图端（1.7.10）能用的指令！</p>
+
+                    <article class="uk-article" id="Java-version" name="Java-vsersion">
+                        <h2 class="uk-h3 uk-margin-bottom" style="text-align: center;font-weight: bold;">注意</h2>
+                        <div class="article-content">
+                            <p>当前造图端使用的版本是<strong>1.7.10</strong>，所以能用的指令不是很多，指令的语法格式也要注意哦！</p>
+                            <p>1.7.10部分指令可以使用NBT，但因为没有@s与@e，所以有很多指令做不到该有的效果，但某些指令也还是可以用@a呀、@p呀，来用出NBT的</p>
+                            <p>好的接下来，我就为你介绍在 <strong>1.7.10</strong> 版本下能使用的基础指令</p>
+                        </div>
+                    </article>
+                    <article class="uk-article" id="basic" name="basic-commands">
+                        <h2 class="uk-h3 uk-margin-bottom" style="text-align: center;font-weight: bold;">基础指令</h2>
+                        <div class="article-content">
+                            <div class="uk-margin-large-top">
+                                <table class="uk-table uk-table-divider uk-table-middle uk-table-justify uk-table-responsive">
+                                    <tbody>
+                                        <tr>
+                                            <td>命令</td>
+                                            <td>命令名</td>
+                                            <td>作用</td>
+                                            <td>语法</td>
+                                            <td>语法举例</td>
+                                            <td>备注</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>/?</code>
+                                            <br/>
+                                            <code>/help</code></td>
+                                            <td>帮助</td>
+                                            <td>提供命令使用帮助。</td>
+                                            <td><code>/? &#60;页数&#62;</code>
+                                            <br/>
+                                            <code>/help &#60;页数&#62;</code></td>
+                                            <td><code>/? 1</code>
+                                            <br/>
+                                            <code>/help 1</code></td>
+                                            <td>&#60;页数&#62;会根据模组情况，自行增加，</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>/xp</code></td>
+                                            <td>经验 / 等级</td>
+                                            <td>更改玩家的经验或等级数量。</td>
+                                            <td><code>/xp &#60;数量&#62; &#60;玩家(可选)&#62;</code></td>
+                                            <td><code>/xp 1</code>
+                                            <br/><code>/xp 1L</code>
+                                            <br/><code>/xp 1 @a</code></td>
+                                            <td>&#60;数量&#62;有2种，分别是经验数量 和 等级数量
+                                            <br/>经验数量直接输入数值即可
+                                            <br/>等级数量需要在输入的数值后加一个"L"字符
+                                            <br/>&#60;玩家(可选)&#62;是玩家的ID，或通用的@a、@p或@r都行，如果不指定，默认是自己的。</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>/time</code></td>
+                                            <td>时间</td>
+                                            <td>调整世界时间。</td>
+                                            <td><code>/time &#60;set|add&#62; &#60;数值&#62;</code></td>
+                                            <td><code>/time set day </code></td>
+                                            <td>&#60;set|add&#62;是两种控制时间的方式
+                                            <br/>&#60;set&#62;是设定
+                                            <br/>&#60;add&#62;是增加
+                                            <br/>&#60;数值&#62;输入 数值，或 day|night 切换时间
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>/difficulty</code></td>
+                                            <td>药水属性</td>
+                                            <td>给予玩家某种药水属性</td>
+                                            <td><code>/difficulty &#60;难度&#62;</code></td>
+                                            <td><code>/difficulty easy</code></td>
+                                            <td>&#60;难道&#62;分别为4个档，对应着：easy、peaceful、normal和hard。</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>/kill</code></td>
+                                            <td>清除实体</td>
+                                            <td>清除实体(玩家)。</td>
+                                            <td><code>/kill &#60;玩家(可选)&#62;</code></td>
+                                            <td><code>/kill @a </code></td>
+                                            <td>&#60;玩家(可选)&#62;是玩家的ID，或通用的@a、@p或@r都行，如果不指定，默认是自己的。</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>/defaultgamemode</code></td>
+                                            <td>世界默认的游戏模式</td>
+                                            <td>更改世界默认的游戏模式。</td>
+                                            <td><code>/defaultgamemode &#60;模式&#62;</code></td>
+                                            <td><code>/defaultgamemode 0</code>
+                                            <br/><code>/defaultgamemode survival</code></td>
+                                            <td>&#60;模式&#62;有2种，分别是生存、创造和冒险，分别对应这编号 0 1 2 
+                                            <br/>当然也可以用英文数值 survival 、 creative 和 adventure 。</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>/gamemode</code></td>
+                                            <td>游戏模式</td>
+                                            <td>更改玩家的游戏模式</td>
+                                            <td><code>/gamemode &#60;模式&#62; &#60;玩家(可选)&#62;</code></td>
+                                            <td><code>/gamemode 0 @a</code>
+                                                <br/><code>/gamemode survival @a</code></td>
+                                            <td>&#60;模式&#62;有2种，分别是生存、创造和冒险，分别对应这编号 0 1 2 
+                                            <br/>当然也可以用英文数值 survival 、 creative 和 adventure 。
+                                            <br/>&#60;玩家(可选)&#62;是玩家的ID，或通用的@a、@p或@r都行，如果不指定，默认是自己的。</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>/gamerule</code></td>
+                                            <td>游戏规则</td>
+                                            <td>更改世界的游戏规则</td>
+                                            <td><code>/gamerule &#60;规则&#62; &#60;true|false&#62; </code></td>
+                                            <td><code>/gamerule keepInventory false</code>
+                                            <td>&#60;规则&#62;有很多种，这里就说常用的吧
+                                            <br/>keepInventory是死亡掉落
+                                            <br/>commandBlockOutput是命令方块执行命令后输出的文本。
+                                            <br/>&#60;true|false&#62;true为允许 ， false为禁止。</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>/give</code></td>
+                                            <td>给予物品</td>
+                                            <td>给予玩家物品。</td>
+                                            <td><code>/give &#60;玩家&#62; &#60;物品&#62; &#60;数量&#62; &#60;NBT&#62;</code></td>
+                                            <td><code>/give @a 137 1</code>
+                                            <code>/give @a minecraft:command_block 1</code></td>
+                                            <td>&#60;玩家&#62;是玩家的ID，或通用的@a、@p或@r都行，如果不指定，就用不出来。
+                                            <br/>&#60;物品&#62;是输入物品的ID，可以用数值ID，也可英文名称。
+                                            <br/>&#60;数量&#62;给你多少物品，不填默认为1。</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>/clear</code></td>
+                                            <td>删除物品</td>
+                                            <td>从玩家物品栏中删除物品，也可以用于检测玩家背包是否有此物品(1.7.10不支持数量检测)。</td>
+                                            <td><code>/clear &#60;玩家&#62; &#60;物品&#62; &#60;数量&#62;</code></td>
+                                            <td><code>/clear @a 137 1</code>
+                                            <code>/clear @a minecraft:command_block 1</code></td>
+                                            <td>&#60;玩家(可选)&#62;是玩家的ID，或通用的@a、@p或@r都行，如果不指定，默认是自己的。
+                                            <br/>&#60;物品&#62;是输入物品的ID，可以用数值ID，也可英文名称。
+                                            <br/>&#60;数量&#62;给你多少物品，不填默认为1。</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>/tp</code></td>
+                                            <td>传送</td>
+                                            <td>传送到某个位置，或者传送到某位玩家前</td>
+                                            <td><code>/tp &#60;玩家&#62; &#60;玩家&#62;</code>
+                                            <br/><code>/tp &#60;玩家&#62; &#60;x&#62; &#60;y&#62; &#60;z&#62;</code></td>
+                                            <td><code>/tp @a Steve</code>
+                                            <br/><code>/tp @a ~ 100 ~ </code></td>
+                                            <td>&#60;玩家&#62;是玩家的ID，或通用的@a、@p或@r都行，如果不指定，默认是自己的。
+                                            <br/>&#60;x&#62;是游戏内的横坐标，x轴。
+                                            <br/>&#60;y&#62;是是游戏内的高度值，y轴。
+                                            <br/>&#60;z&#62;是游戏内的纵坐标，z轴。</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>/setblock</code></td>
+                                            <td>放置</td>
+                                            <td>放置方块到某个位置</td>
+                                            <td><code>/setblock &#60;方块ID&#62; &#60;x&#62; &#60;y&#62; &#60;z&#62; &#60;NBT&#62;</code></td>
+                                            <td><code>/setblock stone ~ ~2 ~ </code></td>
+                                            <td>&#60;方块ID&#62;是方块ID，可以用数值ID，也可英文名称。
+                                            <br/>&#60;x&#62;是游戏内的横坐标，x轴。
+                                            <br/>&#60;y&#62;是是游戏内的高度值，y轴。
+                                            <br/>&#60;z&#62;是游戏内的纵坐标，z轴。</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>/setworldspawn</code></td>
+                                            <td>出生点</td>
+                                            <td>设置/更改世界的出生点</td>
+                                            <td><code>/setworldspawn &#60;x&#62; &#60;y&#62; &#60;z&#62;</code></td>
+                                            <td><code>/setworldspawn ~ ~ ~ </code></td>
+                                            <td>&#60;x&#62;是游戏内的横坐标，x轴。
+                                            <br/>&#60;y&#62;是是游戏内的高度值，y轴。
+                                            <br/>&#60;z&#62;是游戏内的纵坐标，z轴。</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>/spawnpoint</code></td>
+                                            <td>重生点</td>
+                                            <td>将重生点设置在此或某处</td>
+                                            <td><code>/spawnpoint &#60;玩家(可选)&#62; </code>
+                                            <br/><code>/spawnpoint &#60;玩家&#62; &#60;x&#62; &#60;y&#62; &#60;z&#62;</code></td>
+                                            <td><code>/spawnpoint @a</code>
+                                            <br/><code>/spawnpoint @a ~ 100 ~ </code></td>
+                                            <td>&#60;玩家(可选)&#62;是玩家的ID，或通用的@a、@p或@r都行，如果不指定，默认是自己的。
+                                            <br/>&#60;玩家&#62;是玩家的ID，或通用的@a、@p或@r都行，但必须指定。
+                                            <br/>&#60;x&#62;是游戏内的横坐标，x轴。
+                                            <br/>&#60;y&#62;是是游戏内的高度值，y轴。
+                                            <br/>&#60;z&#62;是游戏内的纵坐标，z轴。</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>/say</code></td>
+                                            <td>发送消息</td>
+                                            <td>向多个玩家发送消息</td>
+                                            <td><code>/say &#60;内容&#62; </code>
+                                            <br/><code>/say &#60;玩家(可选)&#62; &#60;内容&#62;</code></td>
+                                            <td><code>/say Hellow</code>
+                                            <br/><code>/say @a Hellow </code></td>
+                                            <td>&#60;玩家(可选)&#62;是玩家的ID，或通用的@a、@p或@r都行，如果不指定，默认是自己的。
+                                            <br/>&#60;内容&#62;是你想发出的信息文本。</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>/playsound</code></td>
+                                            <td>播放音效 / 音乐</td>
+                                            <td>向玩家播放音效或音乐</td>
+                                            <td><code>/playsound &#60;声音&#62; &#60;玩家&#62; &#60;x&#62; &#60;y&#62; &#60;z&#62; &#60;可听到距离(可选)&#62; &#60;音调(可选)&#62; &#60;音量(可选)&#62;</code></td>
+                                            <td><code>/playsound record.11 @a ~ ~ ~ 10000 </code></td>
+                                            <td>&#60;声音&#62;是玩家的ID，或通用的@a、@p或@r都行，如果不指定，默认是自己的。
+                                            <br/>&#60;玩家&#62;是玩家的ID，或通用的@a、@p或@r都行，必须指定玩家。
+                                            <br/>&#60;x&#62;是游戏内的横坐标，x轴。
+                                            <br/>&#60;y&#62;是是游戏内的高度值，y轴。
+                                            <br/>&#60;z&#62;是游戏内的纵坐标，z轴。
+                                            <br/>&#60;可听到距离(可选)&#62;是以播放源以直径扩散，播放源就是你设置的坐标。
+                                            <br/>&#60;音调(可选)&#62;是共3档，0 1 2 ，音调分别从低到高。
+                                            <br/>&#60;音量(可选)&#62;是游戏内的纵坐标，z轴。</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>/summon</code></td>
+                                            <td>召唤生物</td>
+                                            <td>在某地生存一个指定的生物</td>
+                                            <td><code>/summon &#60;生物ID&#62; &#60;x&#62; &#60;y&#62; &#60;z&#62; &#60;NBT&#62;</code></td>
+                                            <td><code>/summon Pig ~ ~ ~ </code></td>
+                                            <td>&#60;生物ID&#62;是生物的英文名称，不知道请自行百度查找。
+                                            <br/>&#60;x&#62;是游戏内的横坐标，x轴。
+                                            <br/>&#60;y&#62;是是游戏内的高度值，y轴。
+                                            <br/>&#60;z&#62;是游戏内的纵坐标，z轴。</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>/weather</code></td>
+                                            <td>天气</td>
+                                            <td>控制空气状态</td>
+                                            <td><code>/weather &#60;状态&#62; &#60;持续时间&#62;</code></td>
+                                            <td><code>/weather clear </code></td>
+                                            <td>&#60;生物ID&#62;是生物的英文名称，不知道请自行百度查找。
+                                            <br/>&#60;状态&#62;分别对应着，clear|rain|thunder，也就是清除，下雨，雷雨。
+                                            <br/>&#60;持续时间&#62;就是这个状态会持续多久，比如：下1秒的雨，10分钟后天晴</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>/effect</code></td>
+                                            <td>药水属性</td>
+                                            <td>给予玩家某种药水属性</td>
+                                            <td><code>/effect &#60;玩家&#62; &#60;效果ID&#62; &#60;持续时间&#62; &#60;强度&#62;</code></td>
+                                            <td><code>/effect @a 1 9999 255 </code></td>
+                                            <td>&#60;玩家&#62;是玩家的ID，或通用的@a、@p或@r都行，但必须指定。
+                                            <br/>&#60;效果ID&#62;是药水属性的数字ID，可输入英文名，如不知道请自行百度。
+                                            <br/>&#60;持续时间&#62;就是这个效果会持续多久，0~9999，比如：中毒2分钟，夜视9999(等于无限)秒。
+                                            <br/>&#60;强度&#62;就是这个效果有多强，0~255，比如：中毒255的强度。</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p>参考：<a href="https://minecraft.fandom.com/zh/wiki/%E5%91%BD%E4%BB%A4#.E4.BD.BF.E7.94.A8.E6.96.B9.E6.B3.95">WIki 命令</a></p>
+                        </div>
+                        <p>现在你已经了解一些基础指令了，如果你还想学习，快去了解<a href="advanced-commands.html">高级指令吧</a></p>
+                        <div>
+                            <a class="button-link uk-text-small" href="index.html">上一页</a>
+                            <a class="button-link uk-text-small" href="advanced-commands.html">下一页</a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="uk-width-1-4@m uk-visible@m">
+                        <div class="uk-position-relative">
+                            <div class="divider-left">
+                                <ul class="uk-nav uk-nav-default">
+                                    <ul class="uk-nav-sub">
+                                    <li class="uk-nav-header">目录</li>
+                                    <li><a href="index.html">介绍</a></li>
+                                    <li class="uk-active"><a href="basic-commands.html">基本指令</a></li>
+                                    <li><a href="advanced-commands.html">高级指令</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+	<section class="uk-section">
+        <footer>
+              <div class="uk-container">
+                <div class="uk-grid-large uk-child-width-expand@m" data-uk-grid>	
+                </div>
+                <div class="uk-grid-large uk-margin-large-top uk-flex uk-flex-middle" data-uk-grid>
+                    <div class="uk-width-1-4@m"></div>
+                    <div class="uk-width-expand@m">
+                        <div class="uk-width-auto@m uk-margin-medium uk-text-small">
+                            <p class="uk-display-inline-block uk-margin-medium-right uk-margin-remove-bottom">By © 2022 <a href="https://dbhg.top">DBHG</a> & <a href="https://alwolf.cn">ALWOLF</a></p>
+                            <p> 作者 © 2022 <a href="https://dbhg.top">蛋白后宫</a> & <a href="https://alwolf.cn">ALWOLF</a></p>
+                      </div>
+                    </div>
+                    <div class="uk-width-auto@m">
+                        <div class="uk-width-auto@m uk-margin-medium uk-text-small">
+                            <a href="https://space.bilibili.com/390126641/" data-uk-icon="icon: bilibili; ratio:0.8" class="uk-margin-left uk-icon-link"></a>
+                            <a href="https://www.douyin.com/user/MS4wLjABAAAAthBauB1siWQBJefyVq2U8RIc1RrIXR00Hr1aC0SU6eA" data-uk-icon="icon: douyin; ratio:0.8" class="uk-margin-left uk-icon-link"></a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+        </footer>
+    </section>
+    
+        <div id="offcanvas" data-uk-offcanvas="flip: true; overlay: true">
+            <div class="uk-offcanvas-bar">
+        
+                <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+        
+                <ul class="uk-nav uk-nav-primary uk-nav-offcanvas">
+                    <li class="uk-nav-header uk-logo uk-margin-bottom">后宫文档</li>
+                    <li><a href="">网站首页</a></li>
+                    <li><a href="../faq.html">常见问题</a></li>
+                    <li><a href="../tool.html">工具</a></li>
+                    <li><a href="/download/">下载</a></li>
+                    <li><a href="/video/">视频站</a></li>
+                    <li><a href="../log.html">更新日志</a></li>
+                    <li><a href="/join/">加入我们</a></li>
+                </ul>
+            </div>
+        </div>
+    </body>
+    </html>
