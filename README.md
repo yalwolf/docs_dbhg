@@ -1,9 +1,9 @@
 # 后宫文档
 一个制作给 想给主播蛋白i造图的萌新水友的 简易教程站
 
-[下载造图端](https://docs.dbhg.top/download.html)
+[下载造图端](https://docs.dbhg.top/download/)
 
-[下载造图端(备用)](https://doc.dbhg.top/download.html)
+[下载造图端(备用)](https://doc.dbhg.top/download/)
 
 ## 正式站点
 [前往](https://docs.dbhg.top)
