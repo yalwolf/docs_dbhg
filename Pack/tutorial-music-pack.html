@@ -123,15 +123,22 @@
                                     <p style="text-align: center;font-size: 20px;">2. 进入『文件夹』，创建一个『文本文件』</p>
                                     <p style="text-align: center;">这个『文本文件』，后缀名更改为『mcmeta』，这就是<span style="color:red;">结构</span>中的『pack.mcmeta』</p>
                                     <p style="text-align: center;">pack.mcmeta内容为
-                                    <div><code  style="margin: 10px 0 10px 150px;">
-                                        <div>{</div>
-                                        <div>"pack": {</div>
-                                          <div>"pack_format": 1,</div>
-                                         <div> "description": "音乐包"</div>
-                                           <div style="margin: 0px 0px 0px 20px;">}</div>
-                                        <div>}</div>
-                                      </code></div>
-                                    </p>
+<div>
+  <code style="margin: 10px 0 10px 180px;">
+    {
+      "wh": {
+        "category": "record",
+        "sounds": [
+          {
+            "name": "wh",
+            "stream": true
+          }
+        ]
+      }
+    }
+  </code>
+</div>
+
                                     <p style="text-align: center;">其中『"pack_format"』如果1，无法识别，可以改成2.</p>
                                     <p style="text-align: center;">其中『"description"』后面是，命名音乐包的『名称』的地方
                                     <br/>会在游戏里的文件夹/压缩包名称下显示</p>
