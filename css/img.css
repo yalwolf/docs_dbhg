@@ -18,7 +18,6 @@
 }
 h2,p,h4{
     font-weight: bold;
-    text-shadow: 3px 5px 5px #656B79; 
 }
 /*尺寸兼容*/
 @media (min-width: 280px) {
